@@ -76,18 +76,18 @@ while running:
 
     if showTitle:
         screen.fill(background_colour)
-        screen.blit(play, (20, fetch_true_center(True)[1]))
-        screen.blit(saves, (20, add_to_tindex(center, 1, savesMargin)[1]))
+        screen.blit(play, center)
+        screen.blit(saves, add_to_tindex(center, 1, savesMargin))
         
         # Scroll cloud
-        screen.blit(pygame.transform.scale(cloud1floor, (info.current_w, info.current_h)), (baseX * 0.5, baseY))
+        screen.blit(pygame.transform.scale(cloud1floor, (info.current_w, info.current_h)), (baseX * 0.3, baseY))
         # Duplicate for wrapping
-        screen.blit(pygame.transform.scale(cloud1floor, (info.current_w, info.current_h)), (baseX * 0.5 - info.current_w, baseY))
+        screen.blit(pygame.transform.scale(cloud1floor, (info.current_w, info.current_h)), (baseX * 0.3 - info.current_w, baseY))
         
 
         # smol cloud :D 
-        screen.blit(pygame.transform.scale(cloud2lonely, (info.current_w, info.current_h)), (baseX * 1.5, baseY))
-        screen.blit(pygame.transform.scale(cloud2lonely, (info.current_w, info.current_h)), (baseX * 1.5 - info.current_w, baseY))
+        screen.blit(pygame.transform.scale(cloud2lonely, (info.current_w, info.current_h)), (baseX, baseY))
+        screen.blit(pygame.transform.scale(cloud2lonely, (info.current_w, info.current_h)), (baseX - info.current_w, baseY))
 
 
         baseX += 3  # scroll speed
