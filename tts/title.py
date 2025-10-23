@@ -53,8 +53,8 @@ saves_area = pygame.Rect(pax, pay+savesMargin, saves.get_width(), saves.get_heig
 print(f"play button area: {play_area}")
 print(f"save button area {saves_area}")
 
-cloud1floor = pygame.image.load("tts\\background\\clouds_mg_1.png") 
-cloud2lonely = pygame.image.load("tts\\background\\cloud_lonely.png") 
+cloud1floor = pygame.image.load("tts/background/clouds_mg_1.png") 
+cloud2lonely = pygame.image.load("tts/background/cloud_lonely.png") 
 
 # Base positions
 baseX, baseY = 0, 0
